@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>jshERP_v3.5代码审计学习</title>
+      <link href="/2025/09/20/jshERP-3-5%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2025/09/20/jshERP-3-5%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<p>这篇当作代码审计的第一篇吧</p><span id="more"></span><h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>截至发文今天v3.5还是release的最新版</p><p>1、源码</p><blockquote><p> <a href="https://github.com/jishenghua/jshERP/releases/tag/v3.5">https://github.com/jishenghua/jshERP/releases/tag/v3.5</a></p></blockquote><p>2、数据库</p><p>注意要配置两个，一个redis一个mysql</p><p><img src="https://cdn.jsdelivr.net/gh/1buffstyl/images@main/blog/20250920210811010.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/1buffstyl/images@main/blog/20250920210811010.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250920210810863"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Code </category>
+          
+          <category> CodeAudit </category>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaSec </tag>
+            
+            <tag> End </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>双指针</title>
       <link href="/2025/09/19/%E5%8A%9B%E6%89%A3hot100/"/>
       <url>/2025/09/19/%E5%8A%9B%E6%89%A3hot100/</url>
