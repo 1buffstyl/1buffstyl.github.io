@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> CURD </tag>
-            
             <tag> Processing </tag>
+            
+            <tag> CURD </tag>
             
         </tags>
       
@@ -82,11 +82,11 @@
       
         <tags>
             
-            <tag> Processing </tag>
-            
             <tag> TwoPointers </tag>
             
             <tag> leetcode-hot100 </tag>
+            
+            <tag> Processing </tag>
             
         </tags>
       
