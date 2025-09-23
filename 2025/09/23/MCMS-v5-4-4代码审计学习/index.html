@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://1buffstyl.github.io/tags/end/"/>
+  
+  <link rel="canonical" href="https://1buffstyl.github.io/2025/09/23/mcms-v5-4-4代码审计学习/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：End - 1buff's thoughts pool</title>
-  <meta name="keywords" content="1buff, 网络安全, 安全, 网安, 技术, IT, 互联网, 编程, 开发">
-  <meta desc name="description" content="1buff's thoughts pool - 1buff - 1buff's thoughts pool">
+  <title>MCMS v5.4.4代码审计学习 - 1buff's thoughts pool</title>
+  <meta name="keywords" content="JavaSec,Reproduce,End,1buff, 网络安全, 安全, 网安, 技术, IT, 互联网, 编程, 开发">
+  <meta desc name="description" content="因为是漏洞复现，就没有整个项目去审了，主要针对漏洞点审吧 - 1buff - 1buff's thoughts pool">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="1buff&#39;s thoughts pool">
-<meta property="og:url" content="https://1buffstyl.github.io/tags/End/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MCMS v5.4.4代码审计学习">
+<meta property="og:url" content="https://1buffstyl.github.io/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="1buff&#39;s thoughts pool">
-<meta property="og:description" content="1buff&#39;s thoughts pool">
+<meta property="og:description" content="因为是漏洞复现，就没有整个项目去审了，主要针对漏洞点审吧">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-09-23T01:59:28.000Z">
+<meta property="article:modified_time" content="2025-09-23T09:58:07.536Z">
 <meta property="article:author" content="1buff">
-<meta property="article:tag" content="1buff, 网络安全, 安全, 网安, 技术, IT, 互联网, 编程, 开发">
+<meta property="article:tag" content="JavaSec">
+<meta property="article:tag" content="Reproduce">
+<meta property="article:tag" content="End">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2260,7 +2264,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2300,26 +2304,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://1buffstyl.github.io/2025/09/23/MCMS-v5-4-4代码审计学习/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="1buff's thoughts pool">
@@ -2329,142 +2315,215 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="1buff's thoughts pool">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         MCMS v5.4.4代码审计学习
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250918232550246.jpg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250918232550246.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">1buff</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Code/">Code</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/">CodeAudit</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/Java/">Java</a>
     
-      <p>因为是漏洞复现，就没有整个项目去审了，主要针对漏洞点审吧</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Code/" itemprop="url"><span itemprop="name">Code</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Code/CodeAudit/" itemprop="url"><span itemprop="name">CodeAudit</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Code/CodeAudit/Java/" itemprop="url"><span itemprop="name">Java</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-23T09:59:28+08:00">2025-09-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Code/">Code</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/">CodeAudit</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/Java/">Java</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/" itemprop="url"><span itemprop="name">Code</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/CodeAudit/" itemprop="url"><span itemprop="name">CodeAudit</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/CodeAudit/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-09-23T09:59:28+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年9月23日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        <div>
-          <a class='readmore' href='/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>因为是漏洞复现，就没有整个项目去审了，主要针对漏洞点审吧</p>
+<span id="more"></span>
+
+<h2 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h2><p>这个比较容易部署，就连接一下数据库就行了</p>
+<p>这里用的是v5.4.4</p>
+<p>1、源码</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/mingSoft/MCMS/releases">https://gitee.com/mingSoft/MCMS/releases</a></p>
+</blockquote>
+<p>2、数据库</p>
+<p>配置一个mysql就行了</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923154134199.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923154134199.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923154134025"></p>
+<p>启动之后访问<a target="_blank" rel="noopener" href="http://localhost:8080/ms/login.do%E5%B0%B1%E8%83%BD%E7%99%BB%E5%BD%95%E5%90%8E%E5%8F%B0%E4%BA%86%EF%BC%8C%E9%BB%98%E8%AE%A4%E8%B4%A6%E5%AF%86msopen/msopen">http://localhost:8080/ms/login.do就能登录后台了，默认账密msopen/msopen</a></p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923155203677.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923155203677.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923155203295"></p>
+<p>前台<a target="_blank" rel="noopener" href="http://localhost:8080/">http://localhost:8080/</a></p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923155309296.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923155309296.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923155308830"></p>
+<h2 id="代码审计"><a href="#代码审计" class="headerlink" title="代码审计"></a>代码审计</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><h3 id="漏洞审计"><a href="#漏洞审计" class="headerlink" title="漏洞审计"></a>漏洞审计</h3><h4 id="任意文件上传"><a href="#任意文件上传" class="headerlink" title="任意文件上传"></a>任意文件上传</h4><p>tips：如果在代码里面搜upload搜不到的话就是没下载jar包的源代码，因为他这个上传方法是写在net.mingsoft.basic.action.ManageFileAction这个外部库里面的</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923171625475.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923171625475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923171625394"></p>
+<p>这种情况去设置maven自动下载的文件类型</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923170130475.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923170130475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923170130362"></p>
+<p>然后再重新构建一下maven</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923170321451.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923170321451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923170321390"></p>
+<p>然后在这里就能找到了</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173204297.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173204297.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923173204169"></p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173429678.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173429678.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923173429516"></p>
+<p>在这里打个断点</p>
+<p><img src="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173600868.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250923173600868.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250923173600785"></p>
+<p>后面的涉及到aop啥的，有点不太懂了，但是写都写了，还是先放着吧，后面懂了再来更新……</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-09-23T17:58:07+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年9月23日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://1buffstyl.github.io/2025/09/20/jshERP-3-5代码审计学习/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="1buff's thoughts pool">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="1buff's thoughts pool">
-    <meta itemprop="description" content="1buff's thoughts pool">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaSec/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaSec</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Reproduce/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Reproduce</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/End/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>End</p></a></div>
+  <span hidden itemprop="keywords">JavaSec Reproduce End</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/09/21/sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A/'>
+          <p class='title'>sql必知必会<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>sql之旅就从此开篇吧
+
+
+前言sql……一门奇怪的语言
+之前学的时候就感觉sql挺有意思的，但是但是当时觉得没啥地方用得上（bushi其实就是太懒了没有去认真学，为了应付考试背了几天就没有然后...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/09/20/jshERP-3-5%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/"  itemprop="url">
-        jshERP_v3.5代码审计学习
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>这篇当作代码审计的第一篇吧</p>
-<p>主要是过一下手感，因为很久没审过了，所以最近写的文章主要是以复现学习为主，哪天有时间了再开新的审计</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-09-20T20:52:11+08:00">2025-09-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Code/">Code</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/">CodeAudit</a><span class="sep"></span><a class="category-link" href="/categories/Code/CodeAudit/Java/">Java</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/" itemprop="url"><span itemprop="name">Code</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/CodeAudit/" itemprop="url"><span itemprop="name">CodeAudit</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Code/CodeAudit/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/09/20/jshERP-3-5%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2473,143 +2532,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250918232550246.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>1buff</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">1buff's thoughts pool</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://gcore.jsdelivr.net/gh/1buffstyl/images@main/blog/20250919004549339.jpg"
-              class="social fab fa-qq flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/1buffstyl"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Code/" href="/categories/Code/"
-            active-action="action-categoriesCode"
-            ><div class='name'>Code</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Code/CodeAudit/" href="/categories/Code/CodeAudit/"
-            active-action="action-categoriesCodeCodeAudit"
-            ><div class='name'>CodeAudit</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Code/CodeAudit/Java/" href="/categories/Code/CodeAudit/Java/"
-            active-action="action-categoriesCodeCodeAuditJava"
-            ><div class='name'>Java</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Code/LeetCode/" href="/categories/Code/LeetCode/"
-            active-action="action-categoriesCodeLeetCode"
-            ><div class='name'>LeetCode</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/Database/" href="/categories/Database/"
-            active-action="action-categoriesDatabase"
-            ><div class='name'>Database</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/Database/SQL/" href="/categories/Database/SQL/"
-            active-action="action-categoriesDatabaseSQL"
-            ><div class='name'>SQL</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/CURD/" style="font-size: 14px; color: #999">CURD</a> <a href="/tags/End/" style="font-size: 24px; color: #555">End</a> <a href="/tags/JavaSec/" style="font-size: 24px; color: #555">JavaSec</a> <a href="/tags/Processing/" style="font-size: 24px; color: #555">Processing</a> <a href="/tags/Reproduce/" style="font-size: 24px; color: #555">Reproduce</a> <a href="/tags/TwoPointers/" style="font-size: 14px; color: #999">TwoPointers</a> <a href="/tags/leetcode-hot100/" style="font-size: 14px; color: #999">leetcode-hot100</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2"><span class="toc-text">环境部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1"><span class="toc-text">代码审计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E5%AE%A1%E8%AE%A1"><span class="toc-text">漏洞审计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-text">任意文件上传</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2637,13 +2601,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3180,7 +3145,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/","sameAs":["https://github.com/volantis-x"],"description":"1buff's thoughts pool"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://1buffstyl.github.io/","name":"1buff's thoughts pool"}},{"@type":"ListItem","position":2,"item":{"@id":"https://1buffstyl.github.io/tags/End/","name":"End"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","keywords":"1buff, 网络安全, 安全, 网安, 技术, IT, 互联网, 编程, 开发","description":"1buff's thoughts pool","author":{"@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/","description":"1buff's thoughts pool"},"publisher":{"@type":"Organization","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://1buffstyl.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"1buff's thoughts pool","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/"},"publisher":{"@type":"Organization","name":"1buff's thoughts pool","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/","sameAs":["https://github.com/volantis-x"],"description":"1buff's thoughts pool"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://1buffstyl.github.io/","name":"1buff's thoughts pool"}},{"@type":"ListItem","position":2,"item":{"@id":"https://1buffstyl.github.io/categories/Code/","name":"Code"}},{"@type":"ListItem","position":2,"item":{"@id":"https://1buffstyl.github.io/categories/Code/CodeAudit/","name":"CodeAudit"}},{"@type":"ListItem","position":2,"item":{"@id":"https://1buffstyl.github.io/categories/Code/CodeAudit/Java/","name":"Java"}},{"@type":"ListItem","position":3,"item":{"@id":"https://1buffstyl.github.io/2025/09/23/MCMS-v5-4-4代码审计学习/","name":"MCMS v5.4.4代码审计学习"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","keywords":"1buff, 网络安全, 安全, 网安, 技术, IT, 互联网, 编程, 开发","description":"1buff's thoughts pool","author":{"@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/","description":"1buff's thoughts pool"},"publisher":{"@type":"Organization","name":"1buff's thoughts pool","url":"https://1buffstyl.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://1buffstyl.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"MCMS v5.4.4代码审计学习","description":"因为是漏洞复现，就没有整个项目去审了，主要针对漏洞点审吧","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://1buffstyl.github.io/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/"},"author":{"@type":"Person","name":"1buff","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://1buffstyl.github.io/"},"publisher":{"@type":"Organization","name":"1buff's thoughts pool","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://1buffstyl.github.io/2025/09/23/MCMS-v5-4-4%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%AD%A6%E4%B9%A0/","wordCount":28,"datePublished":"2025-09-23T01:59:28.000Z","dateModified":"2025-09-23T09:58:07.536Z","articleSection":"Code","keywords":"JavaSec,Reproduce,End","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
